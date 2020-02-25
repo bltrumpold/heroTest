@@ -31,6 +31,8 @@ app.get('/', (req, res)=>{
     res.render('index', {name:"brandon's"})
 })
 
-app.listen(3000, ()=>{
+const port = process.env.PORT || 80
+
+app.listen(port, ()=>{
     console.log('Server is running at localhost:3000')
 })
